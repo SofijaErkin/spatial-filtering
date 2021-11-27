@@ -1,5 +1,5 @@
 %% Read in image 
-I = imread('xiaoguan.png');
+I = imread('IsaíasWat.jpg');
 % yunannan.png
 % xiaoguan.png
 % tangrenjie.png
