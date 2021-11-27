@@ -1,10 +1,5 @@
 %% Read in image 
-I = imread('shilichongxiao.png');
-% yunannan.png
-% xiaoguan.png
-% tangrenjie.png
-% shilichongxiao.png
-% guniang.png
+I = imread('NeptuneClaudia.jpg');
 
 %% Convert to grayscale image
 Igray = rgb2gray(I);
@@ -69,4 +64,4 @@ subplot(2, 3, 5),imshow(Iav5sap, []);
 subplot(2, 3, 6),imshow(Idi5sap, []);
     title('Circular averaging slat & pepper');
     xlabel({'Circular averaging filter size 5','(density 0.15)'});
-                                              Circular averaging filter size 5slat & pepper,density 0.15) ');  
+                                                Circular averaging filter size 5slat & pepper,density 0.15) ');  
