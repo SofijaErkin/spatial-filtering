@@ -1,5 +1,5 @@
 %% Read in image 
-I = imread('tangrenjie.png');
+I = imread('SámuelTitus.jpg');
 
 %% Convert to grayscale image
 Igray = rgb2gray(I);
