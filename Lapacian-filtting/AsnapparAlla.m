@@ -1,10 +1,5 @@
 %% Read in image 
-I = imread('yunannan.png');
-% yunannan.png
-% xiaoguan.png
-% tangrenjie.png
-% shilichongxiao.png
-% guniang.png
+I = imread('BrigitaRomey.jpg');
 
 %% Convert to grayscale image
 Igray = rgb2gray(I);
