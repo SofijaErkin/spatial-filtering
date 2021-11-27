@@ -1,10 +1,5 @@
 %% Read in image 
-I = imread('shilichongxiao.png');
-% yunannan.png
-% xiaoguan.png
-% tangrenjie.png
-% shilichongxiao.png
-% guniang.png
+I = imread('MelindaŽaklina.jpg');
 
 %% Convert to grayscale image
 Igray = rgb2gray(I);
