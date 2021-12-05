@@ -1,9 +1,7 @@
 %% Read in image 
 I = imread('KayaMemphis.jpg');
-
 %% Convert to grayscale image
 Igray = rgb2gray(I);
-
 %% Options
 % Lapacian gradient
 lapw1 = [0 -1 0;-1 4 -1;0 -1 0];
@@ -17,7 +15,6 @@ h_log = fspecial('log',5,0.5);
 I_log = imfilter(Igray,h_log,'corr','replicate');
 h_log2 = fspecial('log',5,2);
 I_log2 = imfilter(Igray,h_log2,'corr','replicate');
-
 %% Display the image 
 subplot(2,2,1);
 imshow(Igray); 
