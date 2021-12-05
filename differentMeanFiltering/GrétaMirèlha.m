@@ -1,9 +1,7 @@
 %% Read in image 
 I = imread('MelindaŽaklina.jpg');
-
 %% Convert to grayscale image
 Igray = rgb2gray(I);
-    
 %% Operator
 % Mean filter
 % h = fspecial('average',hsize)
@@ -17,8 +15,7 @@ Iav3 = filter2(fspecial('average', 3), Igray);
 Iav5 = filter2(fspecial('average', 5), Igray);
 Iav9 = filter2(fspecial('average', 9), Igray);
 Iav15 = filter2(fspecial('average', 15), Igray);
-Iav35 = filter2(fspecial('average', 35), Igray);
-    
+Iav35 = filter2(fspecial('average', 35), Igray);  
 %% Display the image 
 subplot(2, 3, 1),imshow(Igray);
     title('Original Grayscale image');
