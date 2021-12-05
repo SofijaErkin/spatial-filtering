@@ -1,9 +1,7 @@
 %% Read in image 
 I = imread('MattisJalila.jpg');
-
 %% Convert to grayscale image
 Igray = rgb2gray(I);
-
 %% Add noise to image
 % Gaussian 
 % J = imnoise(I,'gaussian')
@@ -27,7 +25,6 @@ Iguassian = imnoise(Igray, 'gaussian', 0.1, 0.015);
 % This affects approximately d*numel(I) pixels.
 % salt & pepper noise
 Islat_pepper = imnoise(Igray, 'salt & pepper', 0.15);
-
 %% Operator
 % Mean filter
 % h = fspecial('average',hsize)
@@ -36,16 +33,13 @@ Islat_pepper = imnoise(Igray, 'salt & pepper', 0.15);
 % h = fspecial('disk',radius)
 % a circular averaging filter (pillbox) within the square matrix of size 2*radius+1.
 % radius:5 (default) | positive number
-
 % Mean filter Guassian white noise
 Iav5ga = filter2(fspecial('average', 5), Iguassian);
 Idi5ga = filter2(fspecial('disk', 5), Iguassian);
 % Mean filter salt & pepper   
 Iav5sap = filter2(fspecial('average', 5), Islat_pepper);
 Idi5sap = filter2(fspecial('disk', 5), Islat_pepper);
-
 %% Display the image 
-
 subplot(2, 3, 1),imshow(Iguassian, []);
     title('Guassian white noise');
     xlabel('mean 0.1, variance 0.015');
