@@ -1,9 +1,7 @@
 %% Read in image 
 I = imread('PenkaAlastair.jpg');
-
 %% Convert to grayscale image
 Igray = rgb2gray(I);
-
 %% Options
 % Sharpening filter
 % Robert gradient
@@ -12,7 +10,6 @@ rw2 = [0 -1;1 0];
 Robertw1 = imfilter(Igray,rw1,'corr','replicate');
 Robertw2 = imfilter(Igray,rw2,'corr','replicate');
 Irobert = abs(Robertw1)+abs(Robertw2);
-
 %% Display the image 
 subplot(2,2,1);
     imshow(Igray); 
