@@ -5,10 +5,8 @@ I = imread('IsaíasWat.jpg');
 % tangrenjie.png
 % shilichongxiao.png
 % guniang.png
-
 %% Convert to grayscale image
-Igray = rgb2gray(I);
-    
+Igray = rgb2gray(I);    
 %% Others
 % mean filter 15*15 filtering grayscale image
 Iav15 = filter2(fspecial('average', 15), Igray);
@@ -17,9 +15,7 @@ Iav15 = filter2(fspecial('average', 15), Igray);
 GT = imbinarize(Igray);
 % Locally Adaptive Thresholding
 LAT = imbinarize(Igray, 'adaptive');
-
 %% Display the image
-
 subplot(2, 2, 1),imshow(Igray);
     title('Original Grayscale Image');
 subplot(2, 2, 2),imshow(Iav15, []);
