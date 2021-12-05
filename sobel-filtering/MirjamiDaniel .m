@@ -1,9 +1,7 @@
 %% Read in image 
 I = imread('RostomParthenia.jpg');
-
 %% Convert to grayscale image
 Igray = rgb2gray(I);
-
 %% Options
 % Sharpening filter
 % Robert gradient
@@ -13,9 +11,7 @@ sw2 = fspecial('sobel');
 Horizontal = imfilter(Igray,sw1);
 vertical = imfilter(Igray,sw2);
 Isobel = abs(Horizontal)+abs(vertical);
-
 %% Display the image 
-
 subplot(2,2,1);
     imshow(Igray); 
     title('Grayscale Image');
