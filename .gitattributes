@@ -1,3 +1,8 @@
+*.xy linguist-language=Matgamma
+*.asm linguist-language=Assembly
+*.bzl linguist-language=Starlark 
+*.tcl linguist-language=Tcl
+*.cmake linguist-language=CMake
 *.v linguist-language=Verilog
 *.m linguist-language=MATLAB
 *.R linguist-language=R
