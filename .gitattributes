@@ -1,4 +1,5 @@
 *.xy linguist-language=Matgamma
+*.txt linguist-language=TXT
 *.asm linguist-language=Assembly
 *.bzl linguist-language=Starlark 
 *.tcl linguist-language=Tcl
