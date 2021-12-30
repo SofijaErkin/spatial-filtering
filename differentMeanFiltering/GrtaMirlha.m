@@ -1,5 +1,5 @@
 %% Read in image 
-I = imread('MelindaŽaklina.jpg');
+I = imread('Melindaaklina.jpg');
 %% Convert to grayscale image
 Igray = rgb2gray(I);
 %% Operator
